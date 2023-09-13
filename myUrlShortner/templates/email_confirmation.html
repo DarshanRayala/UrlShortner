@@ -1,0 +1,14 @@
+{% autoescape off %}
+
+Hello {{name}}!
+
+Welcome to Url Shortener!
+
+Please confirm your email by clicking on the following link:
+
+Confimation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+Thanking You,
+Url Shortner Team!
+
+{% endautoescape %}
